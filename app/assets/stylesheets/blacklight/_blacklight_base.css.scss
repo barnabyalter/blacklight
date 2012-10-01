@@ -35,7 +35,6 @@ h1,h2,h3,h4,h5,h6{margin:0;font-family:'Telex',sans-serif;font-weight:bold;color
 
 /* Import this to maintain the old YUI font styles */
 @import "blacklight/layout";
-@import "blacklight/formatting";
 @import "blacklight/header";
 @import "blacklight/footer";
 @import "blacklight/catalog";
@@ -46,5 +45,3 @@ h1,h2,h3,h4,h5,h6{margin:0;font-family:'Telex',sans-serif;font-weight:bold;color
 @import "blacklight/print";
 
 
-/* IE 6 Adjustments */
-* html #search {left: -1.8em;}
