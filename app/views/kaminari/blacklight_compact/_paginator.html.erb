@@ -8,12 +8,10 @@
 
    Paginator now using the Bootstrap paginator class
 -%>
-<%- if num_pages <= 1 %>
-    <%= page_info %>
-<%- else %>
     <%= paginator.render do -%>
         <%= prev_page_tag %>
-        <%= page_info %>
+        <%= raise(@response.inspect) %>
+        <%= total_count %>
+        <%= num_pages %>
         <%= next_page_tag  %>
     <% end -%>
-<%- end %>

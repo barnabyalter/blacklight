@@ -2,8 +2,7 @@
   
   <ul class="nav nav-pills" id="sortAndPerPage">
       
-      <%= paginate_rsolr_response @response, :theme => 'blacklight_compact' %>
-    
+    <%= render :partial => "paginate_compact" %> 
       
     <li id="sort-dropdown" class="dropdown pill-with-label  pull-right">
             <%= t('blacklight.search.sort.label') %>
@@ -73,7 +72,8 @@
 <div class="row-fluid visible-phone">
    <div class="span12">
       <div class="pageEntriesInfo">
-            <%= paginate_rsolr_response @response, :theme => 'blacklight_compact' %>
+    <%= render :partial => "paginate_compact" %> 
+            
             <%=link_to "(#{t('blacklight.search.start_over')})", url_for(:action=>'index'), :id=>"startOverLink" %>
       </div>
     </div>
