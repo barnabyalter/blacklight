@@ -146,7 +146,7 @@ module Blacklight::BlacklightHelperBehavior
     @document[blacklight_config.show.heading] || @document.id
   end
   def render_document_heading
-    content_tag(:h1, document_heading)
+    content_tag(:h4, document_heading, :class => "show-document-title")
   end
   
   # Used in the show view for setting the main html document title

@@ -161,11 +161,15 @@ li.pill-with-label {
     display:none;
   }
 }
-
-#startOverLink
+.show-document-title 
 {
-  padding-left: 1em;
-  right: 0.66em;
+  padding-top: 0.5em;
+
+}
+
+.show-document > #document
+{
+  margin-top: 0;
 }
 
 .appliedFilter
