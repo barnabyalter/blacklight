@@ -78,31 +78,24 @@ h2.search
   /*
     Search form is in the header...
   */
-  #desktop-search-bar {
+  .desktop-search-bar {
     opacity: 1 !important;
+    padding-top: 0.5em;
 
-    .search-label {
-      font-size: 1.1em;
-      padding-right: 0.5em;
-      margin-top: 0.5em;
-    } 
-
-
-    .search-query {
-      margin-top: 0;
-      width: 18em;
-    }
-    .search-field {
-      margin: 0.1em 0.25em 0 0;
-      width: 8em;
-    }
-    .search-button {
-      margin:0;
-    }
   }
 }
 
+.btn.search-btn {
+  margin-top: 0;
+}
+
+.search_field {
+  margin-right: 0.5em;
+}
+
 #tablet-search-bar {
+  margin-left: 1em;
+  padding-top: 0.5em;
   .search-label {
     padding-left: 2em;
   }
@@ -140,7 +133,12 @@ h2.search
 
 #moblet-search-bar {
   margin: 1em 0 0.5em 0.5em ;
-  
+  .submit-search-text {
+    display:none;
+  }
+  .search_q {
+    width: 8em;
+  }
   form {
     margin:0;
   }

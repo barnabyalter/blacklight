@@ -40,7 +40,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
- <body>
+ <body style="width:100%;">
   <% onload_text = "$('input#q').focus();" if params[:q].to_s.empty? and params[:f].to_s.empty? and params[:id].nil? %>
 
   <%= render :partial => 'shared/header_navbar' %>
