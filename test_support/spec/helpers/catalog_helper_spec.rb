@@ -43,7 +43,7 @@ describe CatalogHelper do
       @response = mock_response :total => 7
 
       html = render_pagination_info(@response, { :entry_name => 'entry_name' })
-      html.should == "<b>1</b> to <b>7</b> of <b>7</b>"
+      html.should == "<b>1</b> - <b>7</b> of <b>7</b>"
       html.html_safe?.should == true
     end
 

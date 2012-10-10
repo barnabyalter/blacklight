@@ -8,7 +8,7 @@ describe "catalog/_facets" do
   it "should have a header" do
     view.stub(:render_facet_partials => '')
     render
-    rendered.should have_selector('h2')
+    rendered.should have_selector('h4')
   end
 
   describe "facet display" do
@@ -26,7 +26,7 @@ describe "catalog/_facets" do
 
     it "should have a header" do
       render
-      rendered.should have_selector('h3')
+      rendered.should have_selector('h5')
     end
 
     it "should list values" do

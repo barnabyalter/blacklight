@@ -96,37 +96,6 @@
 }
 
 
-#search
-{
-  @include border-radius(4px 4px 0 0);
-	border:1px solid $search_ui_border_color;
-	font-size:120%;
-	padding:0.66em;
-	text-align:left;
-
-  #q
-  {
-    width:200px;
-  }
-
-  .submit
-  {
-    margin:0 0.5em;
-    padding:0 0.25em;
-    text-transform:capitalize;
-  }
-
-  hr
-  {
-    display: none;
-    margin: 2em 0 1em;
-  }
-}
-
-#search h2,.pagination h2,#results_text,.page_links .next_page,.page_links .prev_page
-{
-	display:none;
-}
 
 .constraints-row {
   margin-top:1em;

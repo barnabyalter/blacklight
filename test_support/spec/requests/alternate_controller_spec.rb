@@ -10,6 +10,6 @@ describe "controllers that are not catalog controller" do
     click_button 'search'
     page.should have_link("startOverLink", :href=>alternate_index_path)
     page.should have_selector("form.per_page[action='#{alternate_index_path}']")
-    page.should have_selector("form#sort_form[action='#{alternate_index_path}']")
+    page.should have_selector("form.sort[action='#{alternate_index_path}']")
   end
 end

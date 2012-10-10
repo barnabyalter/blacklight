@@ -206,7 +206,7 @@ describe BlacklightHelper do
      it "should consist of #document_heading wrapped in a <h1>" do
       @document = SolrDocument.new('title_display' => "A Fake Document")
 
-      render_document_heading.should have_selector("h1", :content => document_heading, :count => 1)
+      render_document_heading.should have_selector("h4", :content => document_heading, :count => 1)
       render_document_heading.html_safe?.should == true
      end
    end

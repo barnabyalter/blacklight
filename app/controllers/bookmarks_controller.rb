@@ -11,6 +11,9 @@ class BookmarksController < ApplicationController
   before_filter :verify_user
 
   def index
+    bookmark_ids = current_or_guest_user.bookmarks.collect { |b| b.document_id.to_s }
+  
+    @response, @documents = get_solr_response_for_field_values("id", bookmark_ids)
     @bookmarks = current_or_guest_user.bookmarks.page(params[:page])
   end
 
