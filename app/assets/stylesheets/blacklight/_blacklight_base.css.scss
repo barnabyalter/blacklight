@@ -9,30 +9,12 @@
 //@import "compass";
 //@import "compass/reset";
 
-$navbarBackgroundHighlight: #f6fcff;
-$navbarBackground: #f0f6ff;
-
-
-// $navbarBackgroundHighlight: #4090C6;
-// $navbarBackground: #4E9DD4;
-$navbarText: #000;
-$navbarLinkColor: #000;
-$navbarLinkColorHover: #000;
 
 $btnInfoBackground: #9ad0fe;
-
-
-@import url(https://fonts.googleapis.com/css?family=Telex);
-
 
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-
-h1,h2,h3,h4,h5,h6 {
-  font-family:'Telex',sans-serif;
-  text-rendering:optimizelegibility;
-}
 
 @import 'blacklight/blacklight_defaults';
 

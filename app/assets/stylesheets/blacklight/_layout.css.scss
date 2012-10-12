@@ -7,19 +7,13 @@
   
 
 /* This provides a fixed distance between the header and the main content */
-#top-spacer {
-  height: 4.5em;
+body {
+  padding-top: 6em;
 }
 
 /* This padding provides some space around the main container for mobile views */
 #main-container {
   padding: 5px 5px 0 5px;
-}
-
-#background-container {
-  // TODO: remove?
-  // background-color:$main_container_bg_color; 
-  background-image: none;
 }
 
 /* prevent search bar space from collapsing when there's no search bar */
