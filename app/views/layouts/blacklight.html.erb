@@ -47,32 +47,21 @@
 
 
 <!-- /container -->
-<div id="background-container">
-  <div class="visible-desktop" id="top-spacer">
-    &nbsp;
-  </div>
   <div id="main-container" class="container">
-        <div class="inner-container">
             <!-- Top bar -->
             <div id="search-found" class="row hidden-phone">
               <%= topbar_items.join('').html_safe %>
             </div>
             <!-- /Top bar -->
-            <!-- sidebar -->
-            <div class="container">
                   <div class="row">
                       <div class="span10">
                         <%= render :partial=>'/flash_msg' %>
                       </div>    
-                  </div>
-                  <div class="row"> 
-                      <div class="span12">                 
-                       <%= yield %>        
-                       </div>             
-                  </div>
-            </div>
-      </div>
-  </div>  
+                  </div>              
+
+                  <div class="row">
+                       <%= yield %>
+                       </div>   
 </div>
 
 <%= render :partial => 'shared/footer' %>

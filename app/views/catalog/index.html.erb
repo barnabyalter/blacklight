@@ -1,9 +1,6 @@
-<div class="row">
-  <div id="sidebar" class="span3">
-  <div class="sidebar-nav well hidden-phone" id="sidebar-nav">
+  <div id="sidebar" class="span3 hidden-phone">
    <%= render :partial=>'facets' %>
   </div><!--/well -->
-</div><!--/span -->
 
 <div id="content" class="span9">   
     <% search_bar << capture do %>
@@ -29,17 +26,10 @@
         <%= render_constraints(params) %>  
       </div>
 
-	    <%= render 'sort_and_per_page' %>
-
- 
+	    <%= render 'sort_and_per_page' %> 
 
 	    <%= render :partial => 'document_list' %>
 
-
-
-	    <% sidebar_items << capture do %>
-	      <%= render :partial=>'facets' %>
-	    <% end %>
 
 	    <%= render 'results_pagination' %>
 
@@ -49,5 +39,4 @@
         <%= render :partial=>'facets' %>
     </div><!--/well -->
 
-</div>
 </div>
