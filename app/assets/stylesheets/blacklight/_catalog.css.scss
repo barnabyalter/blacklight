@@ -199,7 +199,7 @@ li.pill-with-label {
 	clear:both;
 }
 
-.documentFunctions
+#documents .documentFunctions
 {
 	float:right;
   margin-top: 0.25em;
@@ -210,6 +210,10 @@ li.pill-with-label {
   {
     display:inline;
   }
+}
+
+#sidebar form {
+  margin: 0;
 }
 
 .filterValue
