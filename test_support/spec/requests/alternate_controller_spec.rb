@@ -4,6 +4,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe "controllers that are not catalog controller" do
 
   it "should have the correct search form" do
+  	pending
     visit alternate_index_path
     page.should have_selector("form[action='#{alternate_index_path}']")
     fill_in "q", :with=>"history"
