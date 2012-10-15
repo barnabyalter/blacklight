@@ -100,6 +100,7 @@ en:
       save: 'save'
 
     tools:
+      title: 'Tools'
       cite: 'Cite'
       endnote: 'Export to EndNote'
       refworks: 'Export to Refworks'
