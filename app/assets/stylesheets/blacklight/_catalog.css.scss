@@ -194,6 +194,11 @@ li.pill-with-label {
 {
 	border-bottom:1px dotted $dotted_border_color; 
 	clear:both;
+  padding-bottom: 1em;
+
+  dd {
+    padding-bottom:0.5em;
+  }
 }
 
 #documents .documentFunctions
@@ -316,30 +321,10 @@ Pagination class is using the default Bootstrap design
 	padding:.5em;
 }
 
-dl.defList
-{
-	clear:both;
-	overflow:auto;
-	padding:0.5em 0;
-
-  dd
-  {
-    float:left;
-    margin:0;
-    padding:2px 0;
-    text-align:left;    
-  }
-
-  dt
-  {
-    clear:both;
-    color: $field_name_color;
-    float:left;
-    margin:0;
-    padding:2px 1em 2px 0;
-    text-align:right;
-    width:20%;
+.dl-invert {
+  dt {
     font-weight: normal;
+    color: #888;
   }
 }
 
