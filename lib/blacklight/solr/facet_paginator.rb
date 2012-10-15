@@ -52,13 +52,21 @@ module Blacklight::Solr
     def current_page
       1 + @offset/@limit
     end
+   
+    def has_next?
+      @has_next
+    end
+
+    def has_previous?
+      @has_previous
+    end
 
     def last_page?
-      !@has_next
+      !has_next?
     end
 
     def first_page?
-      !@has_previous
+      !has_previous?
     end
 
 
