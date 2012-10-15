@@ -45,49 +45,12 @@
     text-align:right;
   }
 
-  .next_page, .sort_options .numeric
-  {
-    @include border-radius(0 4px 4px 0);
-  }
 
   .prev_next_links
   {
     float:left;
   }
 
-  .prev_next_links .disabled
-  {
-    background:none;
-    color:gray;
-    font-weight:400;
-  }
-
-  .prev_page,.sort_options .az
-  {
-    @include border-radius(4px 0 0 4px);
-  }
-
-  .sort_options .az, .sort_options .numeric, .next_page,.prev_page
-  {
-    background: $facet_extended_button_bg_color;
-    border:1px solid $facet_extended_button_border_color;
-    display:inline-block;
-    font-weight:700;
-    padding:0.2em 1em;
-  }
-
-  .sort_options .disabled
-  {
-    background-color: $facet_extended_disabled_button_bg_color;
-    border:1px solid $facet_extended_disabled_border_color;
-  }
-
-  .sort_options a:hover,.facet_extended_list .prev_next_links a:hover
-  {
-    background: $facet_extended_button_hover_bg_color;
-    border:1px solid $facet_extended_button_hover_border_color;
-    color: $facet_extended_button_hover_color;
-  }
 }
 
 ul.facet_extended_list

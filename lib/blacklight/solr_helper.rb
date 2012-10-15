@@ -446,7 +446,7 @@ module Blacklight::SolrHelper
       else
         20 + 1
       end
-    solr_params[:"f.#{facet_field}.facet.offset"] = input[  Blacklight::Solr::FacetPaginator.request_keys[:offset]  ].to_i # will default to 0 if nil
+    solr_params[:"f.#{facet_field}.facet.offset"] = ( input.fetch(Blacklight::Solr::FacetPaginator.request_keys[:page] , 1).to_i - 1 ) * solr_params[:"f.#{facet_field}.facet.limit"]
     solr_params[:"f.#{facet_field}.facet.sort"] = input[  Blacklight::Solr::FacetPaginator.request_keys[:sort] ] if  input[  Blacklight::Solr::FacetPaginator.request_keys[:sort] ]   
     solr_params[:rows] = 0
 
