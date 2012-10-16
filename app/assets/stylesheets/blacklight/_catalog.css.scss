@@ -250,55 +250,9 @@ li.pill-with-label {
   }
 }
 
-/*
-Pagination class is using the default Bootstrap design
-*/
-
-/*
-.pagination
-{
-	background-color:$search_ui_bg_color;
-	border-color:$search_ui_border_color;
-	border-style:solid;
-	border-width:0 1px 1px;
-	line-height:2em;
-	padding:0.66em;
-	position:relative;
-
-  .next_page
-  {
-    border-bottom:none;
-    margin-right:0.66em;
-    position:absolute;
-    right:0;
-  }
-
-  .prev_page
-  {
-    border-bottom:none;
-    left:0;
-    margin-left:0.66em;
-    position:absolute;
-  }
-
-  a
-  {
-    border:1px solid transparent;
-  }
-
-  a:hover,a:focus
-  {
-    border:1px solid #003;
-    text-decoration:none;
-  }
- 
-  span.disabled
-  {
-    color:#999;
-  }
-
+.pagination {
+  text-align: center ;
 }
-*/
 
 
 .show #appliedParams
