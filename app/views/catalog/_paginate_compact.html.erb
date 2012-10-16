@@ -1,10 +1,1 @@
-<%- page_params = paginate_params(@response) %>
-<%- if page_params[:current_page] > 1 %>
-   <%= link_to "\u00AB Prev", params.merge(:page => page_params[:current_page] - 1) %>
-   |
-<%- end %>
-<%= render_pagination_info @response %>
-<%- if page_params[:current_page] < page_params[:num_pages] %>
-   |
-   <%= link_to "Next \u00BB", params.merge(:page => page_params[:current_page] + 1) %>
-<%- end %>
+<%= paginate_rsolr_response @response, :theme => :blacklight_compact %>
