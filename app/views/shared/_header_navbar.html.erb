@@ -7,12 +7,12 @@
                       <span class="icon-bar"></span>
                     </a>
 
-                <div class="visible-desktop row">
+                <div class="row">
                   <div class="span3">
                     <%= link_to application_name, root_path, :class => "brand" %>
                   </div>
 
-                  <div class="span6 visible-desktop desktop-search-bar">         
+                  <div class="span6">         
                                     <%= render_search_bar  %>
                   </div>
 
@@ -22,20 +22,7 @@
                   </div>
 
               </div>
-              <div class="hidden-desktop">
-                    <%= link_to application_name, root_path, :class => "brand" %>
-                    <div id="tablet-search-bar" class="pull-left hidden-phone">
-                      <%= render_search_bar  %>
-                    </div>
-                    <div class="pull-right nav-collapse">
-                      <%= render :partial=>'/user_util_links' %>
-                    </div>
-              </div>
+        
         </div>
    </div>
 </div>
-
-<div id="moblet-search-bar" class="visible-phone">
-<%= render_search_bar %>
-</div>
-
