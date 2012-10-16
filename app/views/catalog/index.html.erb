@@ -4,9 +4,6 @@
   </div><!--/well -->
 
 <div id="content" class="span9">   
-    <% search_bar << capture do %>
-      <%= render :partial=>'search_form' %>
-    <% end %>
 
     <% unless has_search_parameters? %>
 	    <%# if there are no input/search related params, display the "home" partial -%>

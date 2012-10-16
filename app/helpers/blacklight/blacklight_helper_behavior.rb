@@ -69,12 +69,7 @@ module Blacklight::BlacklightHelperBehavior
   end
 
   def render_search_bar
-    search_bar.join('').html_safe
-  end
-
-  # collection of items to be rendered in the @searchbar 
-  def search_bar
-    @search_bar ||= []
+    render :partial=>'catalog/search_form'
   end
 
   def search_action_url

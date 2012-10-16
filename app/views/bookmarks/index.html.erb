@@ -2,11 +2,6 @@
   <p><%= link_back_to_catalog %></p>
 <% end %>
 
-<% search_bar << capture do %>
-  <%= render :partial=>'/catalog/search_form' %>
-<% end %>
-
-
 <h1><%= t('blacklight.bookmarks.title') %></h1>
 
 <%- if current_or_guest_user.blank? -%>
