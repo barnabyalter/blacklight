@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 # note that while this is mostly restful routing, the #update and #destroy actions
 # take the Solr document ID as the :id, NOT the id of the actual Bookmark action. 
-class BookmarksController < ApplicationController
+class BookmarksController < CatalogController
   include Blacklight::Configurable
   include Blacklight::SolrHelper
 
@@ -13,7 +13,7 @@ class BookmarksController < ApplicationController
   def index
     bookmark_ids = current_or_guest_user.bookmarks.collect { |b| b.document_id.to_s }
   
-    @response, @documents = get_solr_response_for_field_values("id", bookmark_ids)
+    @response, @document_list = get_solr_response_for_field_values("id", bookmark_ids)
     @bookmarks = current_or_guest_user.bookmarks.page(params[:page])
   end
 
