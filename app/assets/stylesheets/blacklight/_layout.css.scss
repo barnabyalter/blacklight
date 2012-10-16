@@ -11,9 +11,11 @@ body {
   padding-top: 6em;
 }
 
-/* This padding provides some space around the main container for mobile views */
-#main-container {
-  padding: 5px 5px 0 5px;
+@media (max-width: 979px) {
+  body {
+  	padding-top: 0;
+  }
+
 }
 
 /* prevent search bar space from collapsing when there's no search bar */
