@@ -80,7 +80,7 @@ Feature: Search
     And I should see "All Fields"
     And I should see "history"
     And the "q" field should contain "history"
-    When I follow "start over"
+    When I follow "Start Over"
     Then I should be on "the catalog page"
     And I should see "Welcome!"
     And the "q" field should not contain "history"

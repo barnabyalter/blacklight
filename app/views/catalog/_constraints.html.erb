@@ -3,5 +3,7 @@
         <span class="constraints-label"><%= t('blacklight.search.filters.title') %></span>
   
         <%= render_constraints(params) %>  
+
+        <%=link_to t('blacklight.search.start_over'), url_for(:action=>'index'), :id=>"startOverLink" %>
       </div>
 <% end %>
