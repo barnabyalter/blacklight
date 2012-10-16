@@ -1,4 +1,5 @@
-    <div class="prev_next_links btn-group">
+<div class="row">
+    <div class="prev_next_links btn-group pull-left">
       <%= link_to_previous_page @pagination, raw(t('views.pagination.previous')), :params => params, :param_name => Blacklight::Solr::FacetPaginator.request_keys[:page], :class => 'btn' do %>
        <span class="disabled btn"><%= raw(t('views.pagination.previous')) %></span>
      <% end %>
@@ -9,7 +10,7 @@
      
     </div>
  
-  <div class="sort_options btn-group">
+  <div class="sort_options btn-group pull-right">
     <% if @pagination.sort == 'index' -%>
       <span class="active az btn"><%= t('blacklight.search.facets.sort.index') %></span><%= link_to_unless(@pagination.sort == 'count', t('blacklight.search.facets.sort.count'), 
         @pagination.params_for_resort_url('count', params), :class => "sort_change numeric btn") %>
@@ -20,3 +21,4 @@
   </div>
 
 
+</div>
