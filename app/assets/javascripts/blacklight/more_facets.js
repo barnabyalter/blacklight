@@ -14,7 +14,7 @@
     
   Blacklight.do_more_facets_behavior.selector = "a.more_facets_link";
     
-  Blacklight.do_lightbox_dialog.modal = function() {
+  Blacklight.do_more_facets_behavior.modal = function() {
     var existing = $("#reusableModalDialog");
     if ( existing.size() > 0) {
       existing.modal('hide');
